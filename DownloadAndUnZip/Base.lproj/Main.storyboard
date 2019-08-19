@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DownloadAndUnZip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BQp-Zs-cpL">
+                                <rect key="frame" x="112" y="64" width="190" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="6g0-po-mBe"/>
+                                    <constraint firstAttribute="width" secondItem="BQp-Zs-cpL" secondAttribute="height" multiplier="1:1" id="i46-G1-28E"/>
+                                    <constraint firstAttribute="width" constant="190" id="z1g-pO-QcN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qEZ-47-kdE">
+                                <rect key="frame" x="112" y="264" width="190" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qEZ-47-kdE" secondAttribute="height" multiplier="1:1" id="6kA-z8-5N0"/>
+                                    <constraint firstAttribute="height" constant="190" id="cqR-0q-yvc"/>
+                                    <constraint firstAttribute="width" constant="190" id="mMQ-Ku-c8H"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJd-pA-DRH">
+                                <rect key="frame" x="127" y="474" width="160" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="JLK-1M-CuR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="jn7-F2-p1M"/>
+                                </constraints>
+                                <state key="normal" title="Download"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EJd-pA-DRH" firstAttribute="top" secondItem="qEZ-47-kdE" secondAttribute="bottom" constant="20" id="5Wn-96-EEQ"/>
+                            <constraint firstItem="qEZ-47-kdE" firstAttribute="width" secondItem="qEZ-47-kdE" secondAttribute="height" multiplier="1:1" id="Dcv-Ys-fYd"/>
+                            <constraint firstItem="qEZ-47-kdE" firstAttribute="top" secondItem="BQp-Zs-cpL" secondAttribute="bottom" constant="10" id="DdC-2T-TG4"/>
+                            <constraint firstItem="qEZ-47-kdE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FlP-nu-Ajl"/>
+                            <constraint firstItem="BQp-Zs-cpL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Mia-ld-5m0"/>
+                            <constraint firstItem="EJd-pA-DRH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VJk-wD-KN2"/>
+                            <constraint firstItem="BQp-Zs-cpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpp-zY-P55"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="EJd-pA-DRH" id="EJa-JM-Re8"/>
+                        <outlet property="imageView" destination="BQp-Zs-cpL" id="Ret-re-6I6"/>
+                        <outlet property="imageView2" destination="qEZ-47-kdE" id="s2I-ol-9fU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </scene>
+    </scenes>
+</document>
